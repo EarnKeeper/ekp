@@ -1,10 +1,32 @@
-# Earnkeeper
+# EKP - Earnkeeper Plugins
+
+`ekp` is the plugin system for [earnkeeper.io](https://earnkeeper.io). It allows you to scrape the blockchain for the information you want to see and display it in tables and graphs for everyone.
+
+## Documentation
+
+🐛 <https://github.com/EarnKeeper/ekp/issues/2>
+
+## Why?
+
+We started [earnkeeper.io](https://earnkeeper.io) to provide unbiased, detailed and honest analysis of projects in the cryptocurrency [Play 2 Earn](https://wiki.rugdoc.io/docs/play-to-earn-games-p2e/) space.
+
+Games are being released in this space very quickly, and we can cover only a very small portion of them. Our community on [Discord](https://discord.gg/XXcuUyehvY) is already brimming with users who love the site and want to help. 
+
+We don't want to open source the site itself, as it would be impossible to provide a secure experience to those who trust https://earnkeeper.io showing at the top of their browser.
+
+So instead, we are exposing as much functionality as we possibly can through a websocket specification to any externally hosted webservice.
+
+We love <https://dune.xyz>, it gets low skill users into a place where they can create analytics very quickly. But we got stuck trying to model certain games, it didn't have the power needed, and its quite difficult to personalize the results to your users.
+
+We are trying to find a way to give developers the power they need for complex analysis, and the flexibility for personalized display results. All while being able to block dangerous interactions with user's wallets.
+
+This repository contains the specification, and a starter project in node.js to get you up and running. Join our [Discord](https://discord.gg/XXcuUyehvY) to get help or information directly!
 
 ## Getting Started
 
 ## Deploying
 
-ℹ We have an [open issue](https://github.com/EarnKeeper/ekp/issues/1) for developing a command line client to automate the below instructions. Add a thumbs up if you think this will help!
+🐛 We have an [open issue](https://github.com/EarnKeeper/ekp/issues/1) for developing a command line client to automate the below instructions. Add a thumbs up if you think this will help!
 
 This repository uses kubernetes to host its containers. I use digital ocean, you are free to use any provider you prefer, but I will provide instructions for digital ocean here.
 
