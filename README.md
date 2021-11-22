@@ -2,10 +2,6 @@
 
 `ekp` is the plugin system for [earnkeeper.io](https://earnkeeper.io). It allows you to scrape the blockchain for the information you want to see and display it in tables and graphs for everyone.
 
-## Documentation
-
-🐛 <https://github.com/EarnKeeper/ekp/issues/2>
-
 ## Why?
 
 We started [earnkeeper.io](https://earnkeeper.io) to provide unbiased, detailed and honest analysis of projects in the cryptocurrency [Play 2 Earn](https://wiki.rugdoc.io/docs/play-to-earn-games-p2e/) space.
@@ -16,13 +12,35 @@ We don't want to open source the site itself, as it would be impossible to provi
 
 So instead, we are exposing as much functionality as we possibly can through a websocket specification to any externally hosted webservice.
 
-We love <https://dune.xyz>, it gets low skill users into a place where they can create analytics very quickly. But we got stuck trying to model certain games, it didn't have the power needed, and its quite difficult to personalize the results to your users.
+We love <https://dune.xyz>, it gets low skill users into a place where they can create analytics very quickly. But we got stuck trying to model certain games, it didn't have the power we needed, and its quite difficult to personalize the results to your users.
 
 We are trying to find a way to give developers the power they need for complex analysis, and the flexibility for personalized display results. All while being able to block dangerous interactions with user's wallets.
 
 This repository contains the specification, and a starter project in node.js to get you up and running. Join our [Discord](https://discord.gg/XXcuUyehvY) to get help or information directly!
 
-## Getting Started
+## Developing
+
+Fork and clone this repository.
+
+It contains a fully functioning plugin, which we actually use on our https://farms.earnkeeper.io subdomain.
+
+We don't want to re-invent the wheel, so we use the following open source libraries and frameworks in our code:
+
+- Typescript
+- NestJs
+- Socket.io
+- TypeORM
+- Postgres
+- EthersJs
+- Werf
+- Docker
+- Kubernetes
+
+You are free to use any you like, its your microservice after all! You don't even have to use javascript, it can be python, go, whatever you like behind the scenes. All we specify is a protocol that earnkeeper.io understands. 
+
+This project is only intended to get you a start in the language and frameworks that we use ourselves.
+
+We use github to host our code, and github actions to automate our deploys.
 
 ## Deploying
 
