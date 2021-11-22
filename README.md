@@ -32,15 +32,38 @@ We don't want to re-invent the wheel, so we use the following open source librar
 - TypeORM
 - Postgres
 - EthersJs
+- JsonForms
 - Werf
 - Docker
 - Kubernetes
+- Helm
+- Grafana Loki
+- NocoDB
+
 
 You are free to use any you like, its your microservice after all! You don't even have to use javascript, it can be python, go, whatever you like behind the scenes. All we specify is a protocol that earnkeeper.io understands. 
 
 This project is only intended to get you a start in the language and frameworks that we use ourselves.
 
 We use github to host our code, and github actions to automate our deploys.
+
+To run the project locally:
+
+```sh
+cd ekp-farms
+npm install
+npm run start:dev
+```
+
+Go to https://playground.earnkeeper.io/plugins, add a new plugin with url: http://localhost:3000.
+
+After clicking save, you should see the same list of farms that you see on the main site!
+
+You can continue to make changes to your local, and these changes will immediately reflect at https://playground.earnkeeper.io.
+
+Once you are ready to share your creation with the world, follow the deploy instructions below, and share the public host name of your provider with users, they will add your plugin in exactly the same way.
+
+Talk to us in Discord about bundling your plugin with the official earnkeeper site, so that everyone has access to it.
 
 ## Deploying
 
