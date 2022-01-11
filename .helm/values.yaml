@@ -1,14 +1,9 @@
-loki-stack:
-  grafana:
-    enabled: true
-  prometheus:
-    enabled: true
-    alertmanager:
-      persistentVolume:
-        enabled: false
-    server:
-      persistentVolume:
-        enabled: false
-postgresql:
-  postgresqlPassword: postgres
-  postgresqlDatabase: ekp_farms
+redis:
+  auth:
+    enabled: false
+  replica:
+    replicaCount: 1
+
+mongodb:
+  auth:
+    enabled: false

@@ -1,0 +1,36 @@
+{
+  "collection": "@nestjs/schematics",
+  "projects": {
+    "sdk": {
+      "type": "library",
+      "root": "libs/sdk",
+      "entryFile": "index",
+      "sourceRoot": "libs/sdk/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/sdk/tsconfig.lib.json"
+      }
+    },
+    "etherscan": {
+      "type": "library",
+      "root": "libs/etherscan",
+      "entryFile": "index",
+      "sourceRoot": "libs/etherscan/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/etherscan/tsconfig.lib.json"
+      }
+    },
+    "portfolio": {
+      "type": "application",
+      "root": "apps/portfolio",
+      "entryFile": "main",
+      "sourceRoot": "apps/portfolio/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/portfolio/tsconfig.app.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  },
+  "monorepo": true
+}

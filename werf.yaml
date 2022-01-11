@@ -1,6 +1,6 @@
 configVersion: 1
-project: ekp-farms
+project: ekp
 ---
-image: app
-dockerfile: Dockerfile
-context: app
+image: portfolio
+dockerfile: Dockerfile.portfolio
+context: .
